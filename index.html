@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla Periódica Interactiva</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
 </head>
 <body>
     <!-- Contenedor para la cámara y el modelo 3D (Fases 3 y 4) -->
     <div id="canvas-container">
+
+    <div class="camara-preview">
+        <video id="video-camara" autoplay playsinline></video>
+        <canvas id="canvas-mediapipe"></canvas>
+    </div>
         <!-- Aquí Three.js inyectará el <canvas> -->
     </div>
 
