@@ -74,38 +74,47 @@ function init3D() {
 
 
 function crearElementoProcedural(elemento) {
-    // 1. Limpiar el modelo anterior
     while(grupoModelo.children.length > 0){ 
         grupoModelo.remove(grupoModelo.children[0]); 
     }
 
     let geometria, material;
+    // Usamos el color hexadecimal del JSON
+    let colorBase = new THREE.Color(elemento.color_tema);
 
-    // 2. Crear las características físicas según el elemento
-    if (elemento.simbolo === 'Au') {
-        // ORO: Geometría irregular y material metálico puro
-        geometria = new THREE.DodecahedronGeometry(1.5, 1); 
-        material = new THREE.MeshStandardMaterial({
-            color: 0xFFD700,  // Color oro puro
-            metalness: 1.0,   // 100% metálico
-            roughness: 0.3,   // Nivel de pulido (0 es espejo, 1 es mate)
-            flatShading: true // Le da un aspecto de pepita tallada
-        });
-    } else {
-        // HIDRÓGENO (o por defecto): Esfera de gas incandescente
+    const estado = elemento.estado_natural.toLowerCase();
+
+    if (estado === 'gas') {
+        // Gases: Esferas translúcidas e incandescentes
         geometria = new THREE.SphereGeometry(1.5, 32, 32);
         material = new THREE.MeshPhysicalMaterial({
-            color: 0x00f0ff,
+            color: colorBase,
             metalness: 0.1,
             roughness: 0.1,
-            transmission: 0.9, // Efecto cristal/gas translúcido
+            transmission: 0.9,
             transparent: true,
-            emissive: 0x00f0ff, // Emite luz propia
-            emissiveIntensity: 0.4
+            emissive: colorBase,
+            emissiveIntensity: 0.5
+        });
+    } else if (estado === 'líquido') {
+        // Líquidos: Gotas perfectamente lisas y reflectantes
+        geometria = new THREE.SphereGeometry(1.5, 64, 64);
+        material = new THREE.MeshStandardMaterial({
+            color: colorBase,
+            metalness: 1.0,
+            roughness: 0.0 // Cero rugosidad = efecto espejo
+        });
+    } else {
+        // Sólidos/Metales: Estructura facetada con iluminación física
+        geometria = new THREE.DodecahedronGeometry(1.5, 1); 
+        material = new THREE.MeshStandardMaterial({
+            color: colorBase,
+            metalness: 0.9,   
+            roughness: 0.25,  // Acabado ligeramente pulido
+            flatShading: true // Mantiene el aspecto de mineral/pepita
         });
     }
 
-    // 3. Ensamblar y añadir a la escena
     modeloActual = new THREE.Mesh(geometria, material);
     modeloActual.scale.set(escalaBase, escalaBase, escalaBase);
     grupoModelo.add(modeloActual);
