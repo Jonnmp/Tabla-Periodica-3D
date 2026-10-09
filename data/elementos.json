@@ -1,0 +1,26 @@
+[
+  {
+    "numero_atomico": 1,
+    "simbolo": "H",
+    "nombre": "Hidrógeno",
+    "masa_atomica": 1.008,
+    "estado_natural": "Gas",
+    "configuracion_electronica": "1s¹",
+    "electronegatividad": 2.20,
+    "descripcion": "El elemento más ligero y abundante del universo. Clave en la formación de estrellas y con gran potencial como combustible limpio.",
+    "ruta_modelo": "assets/models/hidrogeno.glb",
+    "color_tema": "#00f0ff"
+  },
+  {
+    "numero_atomico": 79,
+    "simbolo": "Au",
+    "nombre": "Oro",
+    "masa_atomica": 196.96,
+    "estado_natural": "Sólido",
+    "configuracion_electronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s¹",
+    "electronegatividad": 2.54,
+    "descripcion": "Metal de transición denso, brillante y extremadamente maleable. Altamente valorado en joyería y electrónica por su resistencia a la corrosión.",
+    "ruta_modelo": "assets/models/oro.glb",
+    "color_tema": "#ffd700"
+  }
+]

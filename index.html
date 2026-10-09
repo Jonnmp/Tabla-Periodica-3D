@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica Interactiva</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!-- Contenedor para la cámara y el modelo 3D (Fases 3 y 4) -->
+    <div id="canvas-container">
+        <!-- Aquí Three.js inyectará el <canvas> -->
+    </div>
+
+    <!-- Panel de Datos -->
+    <aside id="panel-datos">
+        <div class="tarjeta-cristal">
+            <header>
+                <span id="ui-numero-atomico">79</span>
+                <h1 id="ui-simbolo">Au</h1>
+            </header>
+            
+            <section class="detalles">
+                <h2 id="ui-nombre">Oro</h2>
+                
+                <div class="grid-specs">
+                    <div class="spec">
+                        <label>Masa Atómica</label>
+                        <span id="ui-masa">196.96</span>
+                    </div>
+                    <div class="spec">
+                        <label>Estado</label>
+                        <span id="ui-estado">Sólido</span>
+                    </div>
+                    <div class="spec">
+                        <label>Configuración</label>
+                        <span id="ui-config">[Xe] 4f¹⁴ 5d¹⁰ 6s¹</span>
+                    </div>
+                    <div class="spec">
+                        <label>Electronegatividad</label>
+                        <span id="ui-electro">2.54</span>
+                    </div>
+                </div>
+
+                <p id="ui-descripcion">Metal de transición denso, brillante y extremadamente maleable...</p>
+            </section>
+        </div>
+        
+        <!-- Controles temporales para probar la lógica antes de conectar MediaPipe -->
+        <div class="controles-temporales">
+            <button id="btn-prev">◀ Anterior</button>
+            <button id="btn-next">Siguiente ▶</button>
+        </div>
+    </aside>
+
+    <script src="src/js/app.js" type="module"></script>
+</body>
+</html>

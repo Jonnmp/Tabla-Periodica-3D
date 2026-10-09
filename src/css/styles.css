@@ -1,0 +1,118 @@
+:root {
+    --color-fondo: #0a0a12;
+    --color-texto: #e0e0ff;
+    --color-acento: #ffd700; /* Cambiará dinámicamente con JS */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Panel Izquierdo: El Canvas 3D */
+#canvas-container {
+    flex: 1;
+    position: relative;
+    /* Un gradiente sutil para darle profundidad al fondo */
+    background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
+}
+
+/* Panel Derecho: UI */
+#panel-datos {
+    width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Efecto Glassmorphism */
+.tarjeta-cristal {
+    background: rgba(20, 20, 35, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid var(--color-acento);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: border-color 0.3s ease;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+#ui-numero-atomico {
+    font-size: 1.5rem;
+    color: var(--color-acento);
+}
+
+#ui-simbolo {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.grid-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.spec label {
+    display: block;
+    font-size: 0.75rem;
+    color: #8888aa;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.spec span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#ui-descripcion {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #bbbbcc;
+}
+
+/* Botones de prueba */
+.controles-temporales {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
