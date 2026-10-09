@@ -1,12 +1,12 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // Variables globales UI y Datos
 let elementos = [];
 let indiceActual = 0;
 
-// Variables globales Three.js
-let scene, camera, renderer, modeloActual;
+// Variables globales Three.js// Variables globales Three.js
+let scene, camera, renderer, modeloActual, grupoModelo;
+let escalaBase = 1.5; // Tamaño inicial del objeto
 
 // Referencias al DOM (Panel de Datos)
 const uiNumAtomico = document.getElementById('ui-numero-atomico');
@@ -61,20 +61,54 @@ function init3D() {
     directionalLight.position.set(5, 5, 5);
     scene.add(directionalLight);
 
-    // Objeto 3D Temporal (Icosaedro tipo cristal)
-    const geometry = new THREE.IcosahedronGeometry(1.5, 0); 
-    const material = new THREE.MeshStandardMaterial({ 
-        color: 0x00f0ff, 
-        wireframe: true // Se verá como un holograma por ahora
-    });
-    modeloActual = new THREE.Mesh(geometry, material);
-    scene.add(modeloActual);
+    // Reemplaza el IcosahedronGeometry por esto dentro de init3D():
+    grupoModelo = new THREE.Group();
+    scene.add(grupoModelo);
 
     // Ajustar si la ventana cambia de tamaño
     window.addEventListener('resize', onWindowResize, false);
     
     // Iniciar bucle de animación
     animate();
+}
+
+
+function crearElementoProcedural(elemento) {
+    // 1. Limpiar el modelo anterior
+    while(grupoModelo.children.length > 0){ 
+        grupoModelo.remove(grupoModelo.children[0]); 
+    }
+
+    let geometria, material;
+
+    // 2. Crear las características físicas según el elemento
+    if (elemento.simbolo === 'Au') {
+        // ORO: Geometría irregular y material metálico puro
+        geometria = new THREE.DodecahedronGeometry(1.5, 1); 
+        material = new THREE.MeshStandardMaterial({
+            color: 0xFFD700,  // Color oro puro
+            metalness: 1.0,   // 100% metálico
+            roughness: 0.3,   // Nivel de pulido (0 es espejo, 1 es mate)
+            flatShading: true // Le da un aspecto de pepita tallada
+        });
+    } else {
+        // HIDRÓGENO (o por defecto): Esfera de gas incandescente
+        geometria = new THREE.SphereGeometry(1.5, 32, 32);
+        material = new THREE.MeshPhysicalMaterial({
+            color: 0x00f0ff,
+            metalness: 0.1,
+            roughness: 0.1,
+            transmission: 0.9, // Efecto cristal/gas translúcido
+            transparent: true,
+            emissive: 0x00f0ff, // Emite luz propia
+            emissiveIntensity: 0.4
+        });
+    }
+
+    // 3. Ensamblar y añadir a la escena
+    modeloActual = new THREE.Mesh(geometria, material);
+    modeloActual.scale.set(escalaBase, escalaBase, escalaBase);
+    grupoModelo.add(modeloActual);
 }
 
 function animate() {
@@ -104,9 +138,7 @@ function actualizarUI(elemento) {
     document.documentElement.style.setProperty('--color-acento', elemento.color_tema);
 
     // Vincular el color de la UI con el color del modelo 3D temporal
-    if (modeloActual && modeloActual.material) {
-        modeloActual.material.color.set(elemento.color_tema);
-    }
+    crearElementoProcedural(elemento);
 }
 
 // Listeners
@@ -126,7 +158,7 @@ const canvasElement = document.getElementById('canvas-mediapipe');
 const canvasCtx = canvasElement.getContext('2d');
 
 // --- Lógica de Interacción 3D con la Mano (Fase 5) ---
-let escalaBase = 1.5; // Tamaño inicial del objeto
+let tiempoUltimoGesto = 0; // Control de tiempo para no cambiar 100 veces por segundo
 
 function onResults(results) {
     // Ajustar el tamaño del canvas interno al del video
@@ -156,6 +188,22 @@ function onResults(results) {
             // Interpolación lineal (LERP) para que el movimiento sea suave
             modeloActual.rotation.y += (targetRotY - modeloActual.rotation.y) * 0.1;
             modeloActual.rotation.x += (targetRotX - modeloActual.rotation.x) * 0.1;
+
+            // 3. CAMBIO DE ELEMENTO (SWIPE): Detectar si la mano se va a los bordes
+            const tiempoActual = Date.now();
+            if (tiempoActual - tiempoUltimoGesto > 1200) { // Cooldown de 1.2 segundos
+            if (puntoPalma.x > 0.85) { 
+                // Mano hacia el borde derecho (Recuerda que la cámara está en modo espejo)
+                console.log("Gesto: Siguiente");
+                btnNext.click(); // Simulamos el clic en tu botón HTML
+                tiempoUltimoGesto = tiempoActual;
+            } else if (puntoPalma.x < 0.15) {
+                // Mano hacia el borde izquierdo
+                console.log("Gesto: Anterior");
+                btnPrev.click();
+                tiempoUltimoGesto = tiempoActual;
+            }
+        }
         }
 
         // 2. ESCALADO (ZOOM / PELLIZCO): Medimos distancia entre pulgar (4) e índice (8)
