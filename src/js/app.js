@@ -80,12 +80,6 @@ function init3D() {
 function animate() {
     requestAnimationFrame(animate);
     
-    // Rotación constante del modelo
-    if (modeloActual) {
-        modeloActual.rotation.x += 0.005;
-        modeloActual.rotation.y += 0.01;
-    }
-    
     renderer.render(scene, camera);
 }
 
@@ -131,6 +125,9 @@ const videoElement = document.getElementById('video-camara');
 const canvasElement = document.getElementById('canvas-mediapipe');
 const canvasCtx = canvasElement.getContext('2d');
 
+// --- Lógica de Interacción 3D con la Mano (Fase 5) ---
+let escalaBase = 1.5; // Tamaño inicial del objeto
+
 function onResults(results) {
     // Ajustar el tamaño del canvas interno al del video
     canvasElement.width = videoElement.videoWidth;
@@ -140,16 +137,62 @@ function onResults(results) {
     canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
     
     // Dibujar los puntos y conexiones de la mano
-    if (results.multiHandLandmarks) {
-        for (const landmarks of results.multiHandLandmarks) {
-            window.drawConnectors(canvasCtx, landmarks, window.HAND_CONNECTIONS,
-                                 {color: '#00FF00', lineWidth: 2});
-            window.drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 1});
+    if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+        const landmarks = results.multiHandLandmarks[0]; // Tomamos solo la primera mano
+
+        window.drawConnectors(canvasCtx, landmarks, window.HAND_CONNECTIONS,
+                             {color: '#00FF00', lineWidth: 2});
+        window.drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 1});
+        
+        // 1. ROTACIÓN: Usamos el punto 9 (el nudillo de en medio)
+        // Mapeamos el movimiento horizontal (X) y vertical (Y)
+        const puntoPalma = landmarks[9];
+        if (modeloActual) {
+            // Restamos 0.5 para centrar la rotación en 0 y suavizamos
+            // Invertimos el eje X para que actúe en modo espejo natural
+            const targetRotY = -(puntoPalma.x - 0.5) * Math.PI * 2;
+            const targetRotX = (puntoPalma.y - 0.5) * Math.PI * 2;
             
-            // FASE 5 (Adelanto): Aquí extraeremos las coordenadas X e Y
-            // del centro de la mano para rotar el modelo 3D.
+            // Interpolación lineal (LERP) para que el movimiento sea suave
+            modeloActual.rotation.y += (targetRotY - modeloActual.rotation.y) * 0.1;
+            modeloActual.rotation.x += (targetRotX - modeloActual.rotation.x) * 0.1;
+        }
+
+        // 2. ESCALADO (ZOOM / PELLIZCO): Medimos distancia entre pulgar (4) e índice (8)
+        const pulgar = landmarks[4];
+        const indice = landmarks[8];
+
+        // Distancia euclidiana en 3D
+        const dx = pulgar.x - indice.x;
+        const dy = pulgar.y - indice.y;
+        const dz = pulgar.z - indice.z;
+        const distancia = Math.sqrt(dx*dx + dy*dy + dz*dz);
+
+        // Mapeamos la distancia para que el factor de escala sea natural (ej. entre 0.5 y 2.5)
+        // Si juntas los dedos (distancia pequeña) se encoge; si los abres, crece
+        let escalaTarget = distancia * 8; 
+        escalaTarget = Math.max(0.4, Math.min(escalaTarget, 2.8)); // Ponemos límites
+
+        if (modeloActual) {
+            // Transición suave al nuevo tamaño
+            const escalaActual = modeloActual.scale.x;
+            const nuevaEscala = escalaActual + (escalaTarget - escalaActual) * 0.15;
+            modeloActual.scale.set(nuevaEscala, nuevaEscala, nuevaEscala);
+        }
+
+    } else {
+        // Si no hay manos en pantalla, regresa suavemente a su estado natural de rotación
+        if (modeloActual) {
+            modeloActual.rotation.y += 0.005;
+            modeloActual.rotation.x += 0.005;
+            
+            // Regresar a la escala base suavemente
+            const escalaActual = modeloActual.scale.x;
+            const nuevaEscala = escalaActual + (escalaBase - escalaActual) * 0.05;
+            modeloActual.scale.set(nuevaEscala, nuevaEscala, nuevaEscala);
         }
     }
+    
     canvasCtx.restore();
 }
 
