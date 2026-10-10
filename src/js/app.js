@@ -7,6 +7,7 @@ let indiceActual = 0;
 // Variables globales Three.js// Variables globales Three.js
 let scene, camera, renderer, modeloActual, grupoModelo;
 let escalaBase = 1.5; // Tamaño inicial del objeto
+let electronesAnimados = [];
 
 // Referencias al DOM (Panel de Datos)
 const uiNumAtomico = document.getElementById('ui-numero-atomico');
@@ -74,54 +75,116 @@ function init3D() {
 
 
 function crearElementoProcedural(elemento) {
+    // 1. Limpiar el modelo anterior y el arreglo de animaciones
     while(grupoModelo.children.length > 0){ 
         grupoModelo.remove(grupoModelo.children[0]); 
     }
+    electronesAnimados = []; 
 
-    let geometria, material;
-    // Usamos el color hexadecimal del JSON
+    // CORRECCIÓN: Instanciamos el contenedor del átomo para que MediaPipe pueda controlarlo
+    modeloActual = new THREE.Group(); 
+
     let colorBase = new THREE.Color(elemento.color_tema);
+    const Z = elemento.numero_atomico;
 
-    const estado = elemento.estado_natural.toLowerCase();
+    // 2. CREAR EL NÚCLEO
+    const nucleoGeo = new THREE.SphereGeometry(0.4, 32, 32);
+    const nucleoMat = new THREE.MeshPhysicalMaterial({
+        color: colorBase,
+        emissive: colorBase,
+        emissiveIntensity: 0.8,
+        roughness: 0.2,
+        metalness: 0.8,
+        clearcoat: 1.0
+    });
+    const nucleo = new THREE.Mesh(nucleoGeo, nucleoMat);
+    
+    const maxParticulas = Math.min(Z, 30);
+    const partGeo = new THREE.SphereGeometry(0.12, 16, 16);
+    for(let i=0; i<maxParticulas; i++) {
+        const partMat = new THREE.MeshStandardMaterial({
+            color: Math.random() > 0.5 ? 0xff2222 : 0x2222ff, 
+            roughness: 0.6
+        });
+        const particula = new THREE.Mesh(partGeo, partMat);
+        particula.position.set(
+            (Math.random() - 0.5) * 0.5,
+            (Math.random() - 0.5) * 0.5,
+            (Math.random() - 0.5) * 0.5
+        );
+        nucleo.add(particula);
+    }
+    // CORRECCIÓN: Lo añadimos a modeloActual en lugar de grupoModelo
+    modeloActual.add(nucleo);
 
-    if (estado === 'gas') {
-        // Gases: Esferas translúcidas e incandescentes
-        geometria = new THREE.SphereGeometry(1.5, 32, 32);
-        material = new THREE.MeshPhysicalMaterial({
-            color: colorBase,
-            metalness: 0.1,
-            roughness: 0.1,
-            transmission: 0.9,
-            transparent: true,
-            emissive: colorBase,
-            emissiveIntensity: 0.5
-        });
-    } else if (estado === 'líquido') {
-        // Líquidos: Gotas perfectamente lisas y reflectantes
-        geometria = new THREE.SphereGeometry(1.5, 64, 64);
-        material = new THREE.MeshStandardMaterial({
-            color: colorBase,
-            metalness: 1.0,
-            roughness: 0.0 // Cero rugosidad = efecto espejo
-        });
-    } else {
-        // Sólidos/Metales: Estructura facetada con iluminación física
-        geometria = new THREE.DodecahedronGeometry(1.5, 1); 
-        material = new THREE.MeshStandardMaterial({
-            color: colorBase,
-            metalness: 0.9,   
-            roughness: 0.25,  // Acabado ligeramente pulido
-            flatShading: true // Mantiene el aspecto de mineral/pepita
-        });
+    // 3. CALCULAR LAS CAPAS ELECTRÓNICAS
+    let electronesRestantes = Z;
+    const capacidadesOrbitales = [2, 8, 18, 32, 32, 18, 8];
+    let distribucion = [];
+
+    for (let cap of capacidadesOrbitales) {
+        if (electronesRestantes > 0) {
+            let eEnCapa = Math.min(electronesRestantes, cap);
+            distribucion.push(eEnCapa);
+            electronesRestantes -= eEnCapa;
+        } else {
+            break;
+        }
     }
 
-    modeloActual = new THREE.Mesh(geometria, material);
-    modeloActual.scale.set(escalaBase, escalaBase, escalaBase);
+    // 4. CREAR LAS ÓRBITAS Y LOS ELECTRONES
+    const electronGeo = new THREE.SphereGeometry(0.06, 16, 16);
+    const electronMat = new THREE.MeshBasicMaterial({ color: 0xffffff }); 
+
+    distribucion.forEach((numE, indexCapa) => {
+        const radioOrbita = 0.8 + (indexCapa * 0.4); 
+
+        const anilloGeo = new THREE.TorusGeometry(radioOrbita, 0.005, 8, 64);
+        const anilloMat = new THREE.MeshBasicMaterial({
+            color: colorBase,
+            transparent: true,
+            opacity: 0.4
+        });
+        const anillo = new THREE.Mesh(anilloGeo, anilloMat);
+
+        anillo.rotation.x = Math.random() * Math.PI;
+        anillo.rotation.y = Math.random() * Math.PI;
+        
+        // CORRECCIÓN: Lo añadimos a modeloActual
+        modeloActual.add(anillo);
+
+        for(let i=0; i<numE; i++) {
+            const angulo = (i / numE) * Math.PI * 2;
+            const pivote = new THREE.Group();
+            
+            const electron = new THREE.Mesh(electronGeo, electronMat);
+            electron.position.set(Math.cos(angulo) * radioOrbita, Math.sin(angulo) * radioOrbita, 0);
+            
+            pivote.add(electron);
+            pivote.rotation.copy(anillo.rotation);
+            
+            // CORRECCIÓN: Lo añadimos a modeloActual
+            modeloActual.add(pivote);
+
+            electronesAnimados.push({
+                pivote: pivote,
+                velocidad: (0.01 + Math.random() * 0.01) * (indexCapa % 2 === 0 ? 1 : -1)
+            });
+        }
+    });
+
+    // CORRECCIÓN FINAL: Escalamos e insertamos todo el ensamble en el grupo principal
+    modeloActual.scale.set(escalaBase * 0.7, escalaBase * 0.7, escalaBase * 0.7);
     grupoModelo.add(modeloActual);
 }
 
+
 function animate() {
     requestAnimationFrame(animate);
+
+    electronesAnimados.forEach(obj => {
+        obj.pivote.rotation.z += obj.velocidad;
+    });
     
     renderer.render(scene, camera);
 }
