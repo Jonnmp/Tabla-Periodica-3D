@@ -245,6 +245,7 @@ function onResults(results) {
 
     canvasCtx.save();
     canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+    canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
     
     // Dibujar los puntos y conexiones de la mano
     if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
