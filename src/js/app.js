@@ -330,7 +330,7 @@ function initMediaPipe() {
     });
 
     hands.setOptions({
-        maxNumHands: 1, // Solo rastreamos una mano para manipular el elemento
+        maxNumHands: 1, 
         modelComplexity: 1,
         minDetectionConfidence: 0.7,
         minTrackingConfidence: 0.7
@@ -338,16 +338,20 @@ function initMediaPipe() {
 
     hands.onResults(onResults);
 
+    // Volvemos a la herramienta estable de MediaPipe
     const cameraUtils = new window.Camera(videoElement, {
         onFrame: async () => {
             await hands.send({image: videoElement});
         },
+        // Usamos una resolución más pequeña en móviles para evitar que crashee
+        width: window.innerWidth < 768 ? 320 : 640,
+        height: window.innerWidth < 768 ? 240 : 480
     });
     
-    // Capturar el error para que no detenga la ejecución de la app
+    // Capturar el error
     cameraUtils.start().catch(error => {
         console.warn("Cámara no detectada o acceso denegado:", error);
-        alert("No se detectó cámara web. El control por gestos está desactivado, pero puedes usar los botones para navegar.");
+        alert("No se detectó cámara web. El control por gestos está desactivado.");
     });
 }
 
