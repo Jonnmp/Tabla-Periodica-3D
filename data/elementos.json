@@ -7,7 +7,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s1",
     "electronegatividad": 2.2,
-    "descripcion": "El Hidrógeno es un elemento químico de número atómico 1, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 1,
+    "periodo": 1,
+    "descripcion": "El Hidrógeno es un no metal diatómico en estado gas. Pertenece al grupo 1 y periodo 1 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -17,8 +20,11 @@
     "masa_atomica": 4.003,
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2",
-    "electronegatividad": 0,
-    "descripcion": "El Helio es un elemento químico de número atómico 2, clasificado como gas noble.",
+    "electronegatividad": "N/A",
+    "familia": "Gas noble",
+    "grupo": 18,
+    "periodo": 1,
+    "descripcion": "El Helio es un gas noble en estado gas. Pertenece al grupo 18 y periodo 1 de la tabla periódica.",
     "color_tema": "#ff3366"
   },
   {
@@ -29,7 +35,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s1",
     "electronegatividad": 0.98,
-    "descripcion": "El Litio es un elemento químico de número atómico 3, clasificado como metal alcalino.",
+    "familia": "Metal alcalino",
+    "grupo": 1,
+    "periodo": 2,
+    "descripcion": "El Litio es un metal alcalino en estado sólido. Pertenece al grupo 1 y periodo 2 de la tabla periódica.",
     "color_tema": "#ff6666"
   },
   {
@@ -40,7 +49,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2",
     "electronegatividad": 1.57,
-    "descripcion": "El Berilio es un elemento químico de número atómico 4, clasificado como alkaline earth metal.",
+    "familia": "Metal alcalinotérreo",
+    "grupo": 2,
+    "periodo": 2,
+    "descripcion": "El Berilio es un metal alcalinotérreo en estado sólido. Pertenece al grupo 2 y periodo 2 de la tabla periódica.",
     "color_tema": "#ffaa00"
   },
   {
@@ -51,7 +63,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p1",
     "electronegatividad": 2.04,
-    "descripcion": "El Boro es un elemento químico de número atómico 5, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 13,
+    "periodo": 2,
+    "descripcion": "El Boro es un metaloide en estado sólido. Pertenece al grupo 13 y periodo 2 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -62,7 +77,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p2",
     "electronegatividad": 2.55,
-    "descripcion": "El Carbono es un elemento químico de número atómico 6, clasificado como polyatomic nonmetal.",
+    "familia": "No metal poliatómico",
+    "grupo": 14,
+    "periodo": 2,
+    "descripcion": "El Carbono es un no metal poliatómico en estado sólido. Pertenece al grupo 14 y periodo 2 de la tabla periódica.",
     "color_tema": "#00ff00"
   },
   {
@@ -73,7 +91,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p3",
     "electronegatividad": 3.04,
-    "descripcion": "El Nitrógeno es un elemento químico de número atómico 7, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 15,
+    "periodo": 2,
+    "descripcion": "El Nitrógeno es un no metal diatómico en estado gas. Pertenece al grupo 15 y periodo 2 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -84,7 +105,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p4",
     "electronegatividad": 3.44,
-    "descripcion": "El Oxígeno es un elemento químico de número atómico 8, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 16,
+    "periodo": 2,
+    "descripcion": "El Oxígeno es un no metal diatómico en estado gas. Pertenece al grupo 16 y periodo 2 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -95,7 +119,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p5",
     "electronegatividad": 3.98,
-    "descripcion": "El Flúor es un elemento químico de número atómico 9, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 17,
+    "periodo": 2,
+    "descripcion": "El Flúor es un no metal diatómico en estado gas. Pertenece al grupo 17 y periodo 2 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -105,8 +132,11 @@
     "masa_atomica": 20.18,
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p6",
-    "electronegatividad": 0,
-    "descripcion": "El Neón es un elemento químico de número atómico 10, clasificado como gas noble.",
+    "electronegatividad": "N/A",
+    "familia": "Gas noble",
+    "grupo": 18,
+    "periodo": 2,
+    "descripcion": "El Neón es un gas noble en estado gas. Pertenece al grupo 18 y periodo 2 de la tabla periódica.",
     "color_tema": "#ff3366"
   },
   {
@@ -117,7 +147,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s1",
     "electronegatividad": 0.93,
-    "descripcion": "El Sodio es un elemento químico de número atómico 11, clasificado como metal alcalino.",
+    "familia": "Metal alcalino",
+    "grupo": 1,
+    "periodo": 3,
+    "descripcion": "El Sodio es un metal alcalino en estado sólido. Pertenece al grupo 1 y periodo 3 de la tabla periódica.",
     "color_tema": "#ff6666"
   },
   {
@@ -128,7 +161,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2",
     "electronegatividad": 1.31,
-    "descripcion": "El Magnesio es un elemento químico de número atómico 12, clasificado como alkaline earth metal.",
+    "familia": "Metal alcalinotérreo",
+    "grupo": 2,
+    "periodo": 3,
+    "descripcion": "El Magnesio es un metal alcalinotérreo en estado sólido. Pertenece al grupo 2 y periodo 3 de la tabla periódica.",
     "color_tema": "#ffaa00"
   },
   {
@@ -139,7 +175,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p1",
     "electronegatividad": 1.61,
-    "descripcion": "El Aluminium es un elemento químico de número atómico 13, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 13,
+    "periodo": 3,
+    "descripcion": "El Aluminium es un metal del bloque p en estado sólido. Pertenece al grupo 13 y periodo 3 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -150,7 +189,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p2",
     "electronegatividad": 1.9,
-    "descripcion": "El Silicio es un elemento químico de número atómico 14, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 14,
+    "periodo": 3,
+    "descripcion": "El Silicio es un metaloide en estado sólido. Pertenece al grupo 14 y periodo 3 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -161,7 +203,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p3",
     "electronegatividad": 2.19,
-    "descripcion": "El Fósforo es un elemento químico de número atómico 15, clasificado como polyatomic nonmetal.",
+    "familia": "No metal poliatómico",
+    "grupo": 15,
+    "periodo": 3,
+    "descripcion": "El Fósforo es un no metal poliatómico en estado sólido. Pertenece al grupo 15 y periodo 3 de la tabla periódica.",
     "color_tema": "#00ff00"
   },
   {
@@ -172,7 +217,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p4",
     "electronegatividad": 2.58,
-    "descripcion": "El Azufre es un elemento químico de número atómico 16, clasificado como polyatomic nonmetal.",
+    "familia": "No metal poliatómico",
+    "grupo": 16,
+    "periodo": 3,
+    "descripcion": "El Azufre es un no metal poliatómico en estado sólido. Pertenece al grupo 16 y periodo 3 de la tabla periódica.",
     "color_tema": "#00ff00"
   },
   {
@@ -183,7 +231,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p5",
     "electronegatividad": 3.16,
-    "descripcion": "El Cloro es un elemento químico de número atómico 17, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 17,
+    "periodo": 3,
+    "descripcion": "El Cloro es un no metal diatómico en estado gas. Pertenece al grupo 17 y periodo 3 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -193,8 +244,11 @@
     "masa_atomica": 39.948,
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6",
-    "electronegatividad": 0,
-    "descripcion": "El Argón es un elemento químico de número atómico 18, clasificado como gas noble.",
+    "electronegatividad": "N/A",
+    "familia": "Gas noble",
+    "grupo": 18,
+    "periodo": 3,
+    "descripcion": "El Argón es un gas noble en estado gas. Pertenece al grupo 18 y periodo 3 de la tabla periódica.",
     "color_tema": "#ff3366"
   },
   {
@@ -205,7 +259,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s1",
     "electronegatividad": 0.82,
-    "descripcion": "El Potasio es un elemento químico de número atómico 19, clasificado como metal alcalino.",
+    "familia": "Metal alcalino",
+    "grupo": 1,
+    "periodo": 4,
+    "descripcion": "El Potasio es un metal alcalino en estado sólido. Pertenece al grupo 1 y periodo 4 de la tabla periódica.",
     "color_tema": "#ff6666"
   },
   {
@@ -216,7 +273,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2",
     "electronegatividad": 1,
-    "descripcion": "El Calcio es un elemento químico de número atómico 20, clasificado como alkaline earth metal.",
+    "familia": "Metal alcalinotérreo",
+    "grupo": 2,
+    "periodo": 4,
+    "descripcion": "El Calcio es un metal alcalinotérreo en estado sólido. Pertenece al grupo 2 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffaa00"
   },
   {
@@ -227,7 +287,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d1",
     "electronegatividad": 1.36,
-    "descripcion": "El Escandio es un elemento químico de número atómico 21, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 3,
+    "periodo": 4,
+    "descripcion": "El Escandio es un metal de transición en estado sólido. Pertenece al grupo 3 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -238,7 +301,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d2",
     "electronegatividad": 1.54,
-    "descripcion": "El Titanio es un elemento químico de número atómico 22, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 4,
+    "periodo": 4,
+    "descripcion": "El Titanio es un metal de transición en estado sólido. Pertenece al grupo 4 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -249,7 +315,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d3",
     "electronegatividad": 1.63,
-    "descripcion": "El Vanadio es un elemento químico de número atómico 23, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 5,
+    "periodo": 4,
+    "descripcion": "El Vanadio es un metal de transición en estado sólido. Pertenece al grupo 5 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -260,7 +329,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s1 3d5",
     "electronegatividad": 1.66,
-    "descripcion": "El Cromo es un elemento químico de número atómico 24, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 6,
+    "periodo": 4,
+    "descripcion": "El Cromo es un metal de transición en estado sólido. Pertenece al grupo 6 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -271,7 +343,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d5",
     "electronegatividad": 1.55,
-    "descripcion": "El Manganeso es un elemento químico de número atómico 25, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 7,
+    "periodo": 4,
+    "descripcion": "El Manganeso es un metal de transición en estado sólido. Pertenece al grupo 7 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -282,7 +357,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d6",
     "electronegatividad": 1.83,
-    "descripcion": "El Hierro es un elemento químico de número atómico 26, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 8,
+    "periodo": 4,
+    "descripcion": "El Hierro es un metal de transición en estado sólido. Pertenece al grupo 8 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -293,7 +371,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d7",
     "electronegatividad": 1.88,
-    "descripcion": "El Cobalto es un elemento químico de número atómico 27, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 9,
+    "periodo": 4,
+    "descripcion": "El Cobalto es un metal de transición en estado sólido. Pertenece al grupo 9 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -304,7 +385,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d8",
     "electronegatividad": 1.91,
-    "descripcion": "El Níquel es un elemento químico de número atómico 28, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 10,
+    "periodo": 4,
+    "descripcion": "El Níquel es un metal de transición en estado sólido. Pertenece al grupo 10 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -315,7 +399,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s1 3d10",
     "electronegatividad": 1.9,
-    "descripcion": "El Cobre es un elemento químico de número atómico 29, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 11,
+    "periodo": 4,
+    "descripcion": "El Cobre es un metal de transición en estado sólido. Pertenece al grupo 11 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -326,7 +413,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10",
     "electronegatividad": 1.65,
-    "descripcion": "El Zinc es un elemento químico de número atómico 30, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 12,
+    "periodo": 4,
+    "descripcion": "El Zinc es un metal de transición en estado sólido. Pertenece al grupo 12 y periodo 4 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -337,7 +427,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p1",
     "electronegatividad": 1.81,
-    "descripcion": "El Galio es un elemento químico de número atómico 31, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 13,
+    "periodo": 4,
+    "descripcion": "El Galio es un metal del bloque p en estado sólido. Pertenece al grupo 13 y periodo 4 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -348,7 +441,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p2",
     "electronegatividad": 2.01,
-    "descripcion": "El Germanio es un elemento químico de número atómico 32, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 14,
+    "periodo": 4,
+    "descripcion": "El Germanio es un metaloide en estado sólido. Pertenece al grupo 14 y periodo 4 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -359,7 +455,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p3",
     "electronegatividad": 2.18,
-    "descripcion": "El Arsénico es un elemento químico de número atómico 33, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 15,
+    "periodo": 4,
+    "descripcion": "El Arsénico es un metaloide en estado sólido. Pertenece al grupo 15 y periodo 4 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -370,7 +469,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p4",
     "electronegatividad": 2.55,
-    "descripcion": "El Selenio es un elemento químico de número atómico 34, clasificado como polyatomic nonmetal.",
+    "familia": "No metal poliatómico",
+    "grupo": 16,
+    "periodo": 4,
+    "descripcion": "El Selenio es un no metal poliatómico en estado sólido. Pertenece al grupo 16 y periodo 4 de la tabla periódica.",
     "color_tema": "#00ff00"
   },
   {
@@ -381,7 +483,10 @@
     "estado_natural": "Líquido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p5",
     "electronegatividad": 2.96,
-    "descripcion": "El Bromo es un elemento químico de número atómico 35, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 17,
+    "periodo": 4,
+    "descripcion": "El Bromo es un no metal diatómico en estado líquido. Pertenece al grupo 17 y periodo 4 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -392,7 +497,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
     "electronegatividad": 3,
-    "descripcion": "El Kriptón es un elemento químico de número atómico 36, clasificado como gas noble.",
+    "familia": "Gas noble",
+    "grupo": 18,
+    "periodo": 4,
+    "descripcion": "El Kriptón es un gas noble en estado gas. Pertenece al grupo 18 y periodo 4 de la tabla periódica.",
     "color_tema": "#ff3366"
   },
   {
@@ -403,7 +511,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1",
     "electronegatividad": 0.82,
-    "descripcion": "El Rubidio es un elemento químico de número atómico 37, clasificado como metal alcalino.",
+    "familia": "Metal alcalino",
+    "grupo": 1,
+    "periodo": 5,
+    "descripcion": "El Rubidio es un metal alcalino en estado sólido. Pertenece al grupo 1 y periodo 5 de la tabla periódica.",
     "color_tema": "#ff6666"
   },
   {
@@ -414,7 +525,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2",
     "electronegatividad": 0.95,
-    "descripcion": "El Estroncio es un elemento químico de número atómico 38, clasificado como alkaline earth metal.",
+    "familia": "Metal alcalinotérreo",
+    "grupo": 2,
+    "periodo": 5,
+    "descripcion": "El Estroncio es un metal alcalinotérreo en estado sólido. Pertenece al grupo 2 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffaa00"
   },
   {
@@ -425,7 +539,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d1",
     "electronegatividad": 1.22,
-    "descripcion": "El Itrio es un elemento químico de número atómico 39, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 3,
+    "periodo": 5,
+    "descripcion": "El Itrio es un metal de transición en estado sólido. Pertenece al grupo 3 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -436,7 +553,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d2",
     "electronegatividad": 1.33,
-    "descripcion": "El Circonio es un elemento químico de número atómico 40, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 4,
+    "periodo": 5,
+    "descripcion": "El Circonio es un metal de transición en estado sólido. Pertenece al grupo 4 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -447,7 +567,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d4",
     "electronegatividad": 1.6,
-    "descripcion": "El Niobio es un elemento químico de número atómico 41, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 5,
+    "periodo": 5,
+    "descripcion": "El Niobio es un metal de transición en estado sólido. Pertenece al grupo 5 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -458,7 +581,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d5",
     "electronegatividad": 2.16,
-    "descripcion": "El Molibdeno es un elemento químico de número atómico 42, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 6,
+    "periodo": 5,
+    "descripcion": "El Molibdeno es un metal de transición en estado sólido. Pertenece al grupo 6 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -469,7 +595,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d5",
     "electronegatividad": 1.9,
-    "descripcion": "El Tecnecio es un elemento químico de número atómico 43, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 7,
+    "periodo": 5,
+    "descripcion": "El Tecnecio es un metal de transición en estado sólido. Pertenece al grupo 7 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -480,7 +609,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d7",
     "electronegatividad": 2.2,
-    "descripcion": "El Rutenio es un elemento químico de número atómico 44, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 8,
+    "periodo": 5,
+    "descripcion": "El Rutenio es un metal de transición en estado sólido. Pertenece al grupo 8 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -491,7 +623,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d8",
     "electronegatividad": 2.28,
-    "descripcion": "El Rodio es un elemento químico de número atómico 45, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 9,
+    "periodo": 5,
+    "descripcion": "El Rodio es un metal de transición en estado sólido. Pertenece al grupo 9 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -502,7 +637,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10",
     "electronegatividad": 2.2,
-    "descripcion": "El Paladio es un elemento químico de número atómico 46, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 10,
+    "periodo": 5,
+    "descripcion": "El Paladio es un metal de transición en estado sólido. Pertenece al grupo 10 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -513,7 +651,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d10",
     "electronegatividad": 1.93,
-    "descripcion": "El Plata es un elemento químico de número atómico 47, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 11,
+    "periodo": 5,
+    "descripcion": "El Plata es un metal de transición en estado sólido. Pertenece al grupo 11 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -524,7 +665,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10",
     "electronegatividad": 1.69,
-    "descripcion": "El Cadmio es un elemento químico de número atómico 48, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 12,
+    "periodo": 5,
+    "descripcion": "El Cadmio es un metal de transición en estado sólido. Pertenece al grupo 12 y periodo 5 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -535,7 +679,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p1",
     "electronegatividad": 1.78,
-    "descripcion": "El Indio es un elemento químico de número atómico 49, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 13,
+    "periodo": 5,
+    "descripcion": "El Indio es un metal del bloque p en estado sólido. Pertenece al grupo 13 y periodo 5 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -546,7 +693,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p2",
     "electronegatividad": 1.96,
-    "descripcion": "El Estaño es un elemento químico de número atómico 50, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 14,
+    "periodo": 5,
+    "descripcion": "El Estaño es un metal del bloque p en estado sólido. Pertenece al grupo 14 y periodo 5 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -557,7 +707,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p3",
     "electronegatividad": 2.05,
-    "descripcion": "El Antimonio es un elemento químico de número atómico 51, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 15,
+    "periodo": 5,
+    "descripcion": "El Antimonio es un metaloide en estado sólido. Pertenece al grupo 15 y periodo 5 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -568,7 +721,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p4",
     "electronegatividad": 2.1,
-    "descripcion": "El Telurio es un elemento químico de número atómico 52, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 16,
+    "periodo": 5,
+    "descripcion": "El Telurio es un metaloide en estado sólido. Pertenece al grupo 16 y periodo 5 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -579,7 +735,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p5",
     "electronegatividad": 2.66,
-    "descripcion": "El Yodo es un elemento químico de número atómico 53, clasificado como no metal.",
+    "familia": "No metal diatómico",
+    "grupo": 17,
+    "periodo": 5,
+    "descripcion": "El Yodo es un no metal diatómico en estado sólido. Pertenece al grupo 17 y periodo 5 de la tabla periódica.",
     "color_tema": "#00f0ff"
   },
   {
@@ -590,7 +749,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6",
     "electronegatividad": 2.6,
-    "descripcion": "El Xenón es un elemento químico de número atómico 54, clasificado como gas noble.",
+    "familia": "Gas noble",
+    "grupo": 18,
+    "periodo": 5,
+    "descripcion": "El Xenón es un gas noble en estado gas. Pertenece al grupo 18 y periodo 5 de la tabla periódica.",
     "color_tema": "#ff3366"
   },
   {
@@ -601,7 +763,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1",
     "electronegatividad": 0.79,
-    "descripcion": "El Cesio es un elemento químico de número atómico 55, clasificado como metal alcalino.",
+    "familia": "Metal alcalino",
+    "grupo": 1,
+    "periodo": 6,
+    "descripcion": "El Cesio es un metal alcalino en estado sólido. Pertenece al grupo 1 y periodo 6 de la tabla periódica.",
     "color_tema": "#ff6666"
   },
   {
@@ -612,7 +777,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2",
     "electronegatividad": 0.89,
-    "descripcion": "El Bario es un elemento químico de número atómico 56, clasificado como alkaline earth metal.",
+    "familia": "Metal alcalinotérreo",
+    "grupo": 2,
+    "periodo": 6,
+    "descripcion": "El Bario es un metal alcalinotérreo en estado sólido. Pertenece al grupo 2 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffaa00"
   },
   {
@@ -623,7 +791,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 5d1",
     "electronegatividad": 1.1,
-    "descripcion": "El Lantano es un elemento químico de número atómico 57, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Lantano es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -634,7 +805,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 5d1 4f1",
     "electronegatividad": 1.12,
-    "descripcion": "El Cerio es un elemento químico de número atómico 58, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Cerio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -645,7 +819,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f3",
     "electronegatividad": 1.13,
-    "descripcion": "El Praseodimio es un elemento químico de número atómico 59, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Praseodimio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -656,7 +833,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f4",
     "electronegatividad": 1.14,
-    "descripcion": "El Neodimio es un elemento químico de número atómico 60, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Neodimio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -667,7 +847,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f5",
     "electronegatividad": 1.13,
-    "descripcion": "El Prometio es un elemento químico de número atómico 61, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Prometio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -678,7 +861,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f6",
     "electronegatividad": 1.17,
-    "descripcion": "El Samario es un elemento químico de número atómico 62, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Samario es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -689,7 +875,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7",
     "electronegatividad": 1.2,
-    "descripcion": "El Europio es un elemento químico de número atómico 63, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Europio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -700,7 +889,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f7 5d1",
     "electronegatividad": 1.2,
-    "descripcion": "El Gadolinio es un elemento químico de número atómico 64, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Gadolinio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -711,7 +903,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f9",
     "electronegatividad": 1.1,
-    "descripcion": "El Terbio es un elemento químico de número atómico 65, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Terbio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -722,7 +917,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f10",
     "electronegatividad": 1.22,
-    "descripcion": "El Disprosio es un elemento químico de número atómico 66, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Disprosio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -733,7 +931,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f11",
     "electronegatividad": 1.23,
-    "descripcion": "El Holmio es un elemento químico de número atómico 67, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Holmio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -744,7 +945,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f12",
     "electronegatividad": 1.24,
-    "descripcion": "El Erbio es un elemento químico de número atómico 68, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Erbio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -755,7 +959,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f13",
     "electronegatividad": 1.25,
-    "descripcion": "El Tulio es un elemento químico de número atómico 69, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Tulio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -766,7 +973,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14",
     "electronegatividad": 1.1,
-    "descripcion": "El Iterbio es un elemento químico de número atómico 70, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Iterbio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -777,7 +987,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d1",
     "electronegatividad": 1.27,
-    "descripcion": "El Lutecio es un elemento químico de número atómico 71, clasificado como lantánido.",
+    "familia": "Lantánido",
+    "grupo": 3,
+    "periodo": 6,
+    "descripcion": "El Lutecio es un lantánido en estado sólido. Pertenece al grupo 3 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffbfff"
   },
   {
@@ -788,7 +1001,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d2",
     "electronegatividad": 1.3,
-    "descripcion": "El Hafnio es un elemento químico de número atómico 72, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 4,
+    "periodo": 6,
+    "descripcion": "El Hafnio es un metal de transición en estado sólido. Pertenece al grupo 4 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -799,7 +1015,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d3",
     "electronegatividad": 1.5,
-    "descripcion": "El Tantalio es un elemento químico de número atómico 73, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 5,
+    "periodo": 6,
+    "descripcion": "El Tantalio es un metal de transición en estado sólido. Pertenece al grupo 5 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -810,7 +1029,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d4",
     "electronegatividad": 2.36,
-    "descripcion": "El Wolframio es un elemento químico de número atómico 74, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 6,
+    "periodo": 6,
+    "descripcion": "El Wolframio es un metal de transición en estado sólido. Pertenece al grupo 6 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -821,7 +1043,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d5",
     "electronegatividad": 1.9,
-    "descripcion": "El Renio es un elemento químico de número atómico 75, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 7,
+    "periodo": 6,
+    "descripcion": "El Renio es un metal de transición en estado sólido. Pertenece al grupo 7 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -832,7 +1057,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d6",
     "electronegatividad": 2.2,
-    "descripcion": "El Osmio es un elemento químico de número atómico 76, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 8,
+    "periodo": 6,
+    "descripcion": "El Osmio es un metal de transición en estado sólido. Pertenece al grupo 8 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -843,7 +1071,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d7",
     "electronegatividad": 2.2,
-    "descripcion": "El Iridio es un elemento químico de número atómico 77, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 9,
+    "periodo": 6,
+    "descripcion": "El Iridio es un metal de transición en estado sólido. Pertenece al grupo 9 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -854,7 +1085,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1 4f14 5d9",
     "electronegatividad": 2.28,
-    "descripcion": "El Platino es un elemento químico de número atómico 78, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 10,
+    "periodo": 6,
+    "descripcion": "El Platino es un metal de transición en estado sólido. Pertenece al grupo 10 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -865,7 +1099,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1 4f14 5d10",
     "electronegatividad": 2.54,
-    "descripcion": "El Oro es un elemento químico de número atómico 79, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 11,
+    "periodo": 6,
+    "descripcion": "El Oro es un metal de transición en estado sólido. Pertenece al grupo 11 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -876,7 +1113,10 @@
     "estado_natural": "Líquido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10",
     "electronegatividad": 2,
-    "descripcion": "El Mercurio es un elemento químico de número atómico 80, clasificado como metal de transición.",
+    "familia": "Metal de transición",
+    "grupo": 12,
+    "periodo": 6,
+    "descripcion": "El Mercurio es un metal de transición en estado líquido. Pertenece al grupo 12 y periodo 6 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -887,7 +1127,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p1",
     "electronegatividad": 1.62,
-    "descripcion": "El Talio es un elemento químico de número atómico 81, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 13,
+    "periodo": 6,
+    "descripcion": "El Talio es un metal del bloque p en estado sólido. Pertenece al grupo 13 y periodo 6 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -898,7 +1141,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p2",
     "electronegatividad": 1.87,
-    "descripcion": "El Plomo es un elemento químico de número atómico 82, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 14,
+    "periodo": 6,
+    "descripcion": "El Plomo es un metal del bloque p en estado sólido. Pertenece al grupo 14 y periodo 6 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -909,7 +1155,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p3",
     "electronegatividad": 2.02,
-    "descripcion": "El Bismuto es un elemento químico de número atómico 83, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 15,
+    "periodo": 6,
+    "descripcion": "El Bismuto es un metal del bloque p en estado sólido. Pertenece al grupo 15 y periodo 6 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -920,7 +1169,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p4",
     "electronegatividad": 2,
-    "descripcion": "El Polonio es un elemento químico de número atómico 84, clasificado como post-metal de transición.",
+    "familia": "Metal del bloque p",
+    "grupo": 16,
+    "periodo": 6,
+    "descripcion": "El Polonio es un metal del bloque p en estado sólido. Pertenece al grupo 16 y periodo 6 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -931,7 +1183,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p5",
     "electronegatividad": 2.2,
-    "descripcion": "El Astato es un elemento químico de número atómico 85, clasificado como metaloide.",
+    "familia": "Metaloide",
+    "grupo": 17,
+    "periodo": 6,
+    "descripcion": "El Astato es un metaloide en estado sólido. Pertenece al grupo 17 y periodo 6 de la tabla periódica.",
     "color_tema": "#99ccff"
   },
   {
@@ -942,7 +1197,10 @@
     "estado_natural": "Gas",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6",
     "electronegatividad": 2.2,
-    "descripcion": "El Radón es un elemento químico de número atómico 86, clasificado como gas noble.",
+    "familia": "Gas noble",
+    "grupo": 18,
+    "periodo": 6,
+    "descripcion": "El Radón es un gas noble en estado gas. Pertenece al grupo 18 y periodo 6 de la tabla periódica.",
     "color_tema": "#ff3366"
   },
   {
@@ -953,7 +1211,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s1",
     "electronegatividad": 0.79,
-    "descripcion": "El Francio es un elemento químico de número atómico 87, clasificado como metal alcalino.",
+    "familia": "Metal alcalino",
+    "grupo": 1,
+    "periodo": 7,
+    "descripcion": "El Francio es un metal alcalino en estado sólido. Pertenece al grupo 1 y periodo 7 de la tabla periódica.",
     "color_tema": "#ff6666"
   },
   {
@@ -964,7 +1225,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2",
     "electronegatividad": 0.9,
-    "descripcion": "El Radio es un elemento químico de número atómico 88, clasificado como alkaline earth metal.",
+    "familia": "Metal alcalinotérreo",
+    "grupo": 2,
+    "periodo": 7,
+    "descripcion": "El Radio es un metal alcalinotérreo en estado sólido. Pertenece al grupo 2 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffaa00"
   },
   {
@@ -975,7 +1239,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d1",
     "electronegatividad": 1.1,
-    "descripcion": "El Actinio es un elemento químico de número atómico 89, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Actinio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -986,7 +1253,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d2",
     "electronegatividad": 1.3,
-    "descripcion": "El Torio es un elemento químico de número atómico 90, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Torio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -997,7 +1267,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f2 6d1",
     "electronegatividad": 1.5,
-    "descripcion": "El Protactinio es un elemento químico de número atómico 91, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Protactinio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1008,7 +1281,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f3 6d1",
     "electronegatividad": 1.38,
-    "descripcion": "El Uranio es un elemento químico de número atómico 92, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Uranio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1019,7 +1295,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f4 6d1",
     "electronegatividad": 1.36,
-    "descripcion": "El Neptunio es un elemento químico de número atómico 93, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Neptunio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1030,7 +1309,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f6",
     "electronegatividad": 1.28,
-    "descripcion": "El Plutonio es un elemento químico de número atómico 94, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Plutonio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1041,7 +1323,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7",
     "electronegatividad": 1.13,
-    "descripcion": "El Americio es un elemento químico de número atómico 95, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Americio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1052,7 +1337,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7 6d1",
     "electronegatividad": 1.28,
-    "descripcion": "El Curio es un elemento químico de número atómico 96, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Curio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1063,7 +1351,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f9",
     "electronegatividad": 1.3,
-    "descripcion": "El Berkelio es un elemento químico de número atómico 97, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Berkelio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1074,7 +1365,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f10",
     "electronegatividad": 1.3,
-    "descripcion": "El Californio es un elemento químico de número atómico 98, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Californio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1085,7 +1379,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f11",
     "electronegatividad": 1.3,
-    "descripcion": "El Einstenio es un elemento químico de número atómico 99, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Einstenio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1096,7 +1393,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f12",
     "electronegatividad": 1.3,
-    "descripcion": "El Fermio es un elemento químico de número atómico 100, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Fermio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1107,7 +1407,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f13",
     "electronegatividad": 1.3,
-    "descripcion": "El Mendelevio es un elemento químico de número atómico 101, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Mendelevio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1118,7 +1421,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14",
     "electronegatividad": 1.3,
-    "descripcion": "El Nobelio es un elemento químico de número atómico 102, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Nobelio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1129,7 +1435,10 @@
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 7p1",
     "electronegatividad": 1.3,
-    "descripcion": "El Lawrencio es un elemento químico de número atómico 103, clasificado como actínido.",
+    "familia": "Actínido",
+    "grupo": 3,
+    "periodo": 7,
+    "descripcion": "El Lawrencio es un actínido en estado sólido. Pertenece al grupo 3 y periodo 7 de la tabla periódica.",
     "color_tema": "#c299ff"
   },
   {
@@ -1139,8 +1448,11 @@
     "masa_atomica": 267,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d2",
-    "electronegatividad": 0,
-    "descripcion": "El Rutherfordio es un elemento químico de número atómico 104, clasificado como metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 4,
+    "periodo": 7,
+    "descripcion": "El Rutherfordio es un metal de transición en estado sólido. Pertenece al grupo 4 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1150,8 +1462,11 @@
     "masa_atomica": 268,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d3",
-    "electronegatividad": 0,
-    "descripcion": "El Dubnio es un elemento químico de número atómico 105, clasificado como metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 5,
+    "periodo": 7,
+    "descripcion": "El Dubnio es un metal de transición en estado sólido. Pertenece al grupo 5 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1161,8 +1476,11 @@
     "masa_atomica": 269,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d4",
-    "electronegatividad": 0,
-    "descripcion": "El Seaborgio es un elemento químico de número atómico 106, clasificado como metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 6,
+    "periodo": 7,
+    "descripcion": "El Seaborgio es un metal de transición en estado sólido. Pertenece al grupo 6 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1172,8 +1490,11 @@
     "masa_atomica": 270,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d5",
-    "electronegatividad": 0,
-    "descripcion": "El Bohrio es un elemento químico de número atómico 107, clasificado como metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 7,
+    "periodo": 7,
+    "descripcion": "El Bohrio es un metal de transición en estado sólido. Pertenece al grupo 7 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1183,8 +1504,11 @@
     "masa_atomica": 269,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d6",
-    "electronegatividad": 0,
-    "descripcion": "El Hassio es un elemento químico de número atómico 108, clasificado como metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 8,
+    "periodo": 7,
+    "descripcion": "El Hassio es un metal de transición en estado sólido. Pertenece al grupo 8 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1194,8 +1518,11 @@
     "masa_atomica": 278,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d7",
-    "electronegatividad": 0,
-    "descripcion": "El Meitnerio es un elemento químico de número atómico 109, clasificado como unknown, probably metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 9,
+    "periodo": 7,
+    "descripcion": "El Meitnerio es un metal de transición en estado sólido. Pertenece al grupo 9 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1205,8 +1532,11 @@
     "masa_atomica": 281,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d8",
-    "electronegatividad": 0,
-    "descripcion": "El Darmstadtio es un elemento químico de número atómico 110, clasificado como unknown, probably metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 10,
+    "periodo": 7,
+    "descripcion": "El Darmstadtio es un metal de transición en estado sólido. Pertenece al grupo 10 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1216,8 +1546,11 @@
     "masa_atomica": 282,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d9",
-    "electronegatividad": 0,
-    "descripcion": "El Roentgenio es un elemento químico de número atómico 111, clasificado como unknown, probably metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 11,
+    "periodo": 7,
+    "descripcion": "El Roentgenio es un metal de transición en estado sólido. Pertenece al grupo 11 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1227,8 +1560,11 @@
     "masa_atomica": 285,
     "estado_natural": "Líquido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10",
-    "electronegatividad": 0,
-    "descripcion": "El Copernicio es un elemento químico de número atómico 112, clasificado como metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 12,
+    "periodo": 7,
+    "descripcion": "El Copernicio es un metal de transición en estado líquido. Pertenece al grupo 12 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1238,8 +1574,11 @@
     "masa_atomica": 286,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p1",
-    "electronegatividad": 0,
-    "descripcion": "El Nihonio es un elemento químico de número atómico 113, clasificado como unknown, probably metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal de transición",
+    "grupo": 13,
+    "periodo": 7,
+    "descripcion": "El Nihonio es un metal de transición en estado sólido. Pertenece al grupo 13 y periodo 7 de la tabla periódica.",
     "color_tema": "#ffd700"
   },
   {
@@ -1249,8 +1588,11 @@
     "masa_atomica": 289,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p2",
-    "electronegatividad": 0,
-    "descripcion": "El Flerovio es un elemento químico de número atómico 114, clasificado como post-metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal del bloque p",
+    "grupo": 14,
+    "periodo": 7,
+    "descripcion": "El Flerovio es un metal del bloque p en estado sólido. Pertenece al grupo 14 y periodo 7 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -1260,8 +1602,11 @@
     "masa_atomica": 289,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p3",
-    "electronegatividad": 0,
-    "descripcion": "El Moscovio es un elemento químico de número atómico 115, clasificado como unknown, probably post-metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal del bloque p",
+    "grupo": 15,
+    "periodo": 7,
+    "descripcion": "El Moscovio es un metal del bloque p en estado sólido. Pertenece al grupo 15 y periodo 7 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -1271,8 +1616,11 @@
     "masa_atomica": 293,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p4",
-    "electronegatividad": 0,
-    "descripcion": "El Livermorio es un elemento químico de número atómico 116, clasificado como unknown, probably post-metal de transición.",
+    "electronegatividad": "N/A",
+    "familia": "Metal del bloque p",
+    "grupo": 16,
+    "periodo": 7,
+    "descripcion": "El Livermorio es un metal del bloque p en estado sólido. Pertenece al grupo 16 y periodo 7 de la tabla periódica.",
     "color_tema": "#cccccc"
   },
   {
@@ -1282,9 +1630,12 @@
     "masa_atomica": 294,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p5",
-    "electronegatividad": 0,
-    "descripcion": "El Teneso es un elemento químico de número atómico 117, clasificado como unknown, probably metaloide.",
-    "color_tema": "#99ccff"
+    "electronegatividad": "N/A",
+    "familia": "Metal del bloque p",
+    "grupo": 17,
+    "periodo": 7,
+    "descripcion": "El Teneso es un metal del bloque p en estado sólido. Pertenece al grupo 17 y periodo 7 de la tabla periódica.",
+    "color_tema": "#cccccc"
   },
   {
     "numero_atomico": 118,
@@ -1293,9 +1644,12 @@
     "masa_atomica": 294,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p6",
-    "electronegatividad": 0,
-    "descripcion": "El Oganesón es un elemento químico de número atómico 118, clasificado como unknown, predicted to be gas noble.",
-    "color_tema": "#ff3366"
+    "electronegatividad": "N/A",
+    "familia": "Metal del bloque p",
+    "grupo": 18,
+    "periodo": 7,
+    "descripcion": "El Oganesón es un metal del bloque p en estado sólido. Pertenece al grupo 18 y periodo 7 de la tabla periódica.",
+    "color_tema": "#cccccc"
   },
   {
     "numero_atomico": 119,
@@ -1304,8 +1658,11 @@
     "masa_atomica": 315,
     "estado_natural": "Sólido",
     "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p6 8s1",
-    "electronegatividad": 0,
-    "descripcion": "El Ununennium es un elemento químico de número atómico 119, clasificado como unknown, but predicted to be an metal alcalino.",
-    "color_tema": "#ff6666"
+    "electronegatividad": "N/A",
+    "familia": "Metal del bloque p",
+    "grupo": 1,
+    "periodo": 8,
+    "descripcion": "El Ununennium es un metal del bloque p en estado sólido. Pertenece al grupo 1 y periodo 8 de la tabla periódica.",
+    "color_tema": "#cccccc"
   }
 ]

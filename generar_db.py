@@ -2,11 +2,9 @@ import json
 import urllib.request
 
 def generar_json():
-    # API pública con datos científicos de la tabla periódica
     url = "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json"
     
-    # Diccionario de traducción al español
-    traducciones = {
+    traducciones_nombres = {
         "Hydrogen":"Hidrógeno", "Helium":"Helio", "Lithium":"Litio", "Beryllium":"Berilio", "Boron":"Boro",
         "Carbon":"Carbono", "Nitrogen":"Nitrógeno", "Oxygen":"Oxígeno", "Fluorine":"Flúor", "Neon":"Neón",
         "Sodium":"Sodio", "Magnesium":"Magnesio", "Aluminum":"Aluminio", "Silicon":"Silicio", "Phosphorus":"Fósforo",
@@ -33,7 +31,20 @@ def generar_json():
         "Livermorium":"Livermorio", "Tennessine":"Teneso", "Oganesson":"Oganesón"
     }
 
-    # Mapa de colores neón por familia química
+    # Traducción exacta de las categorías (familias)
+    traducciones_categorias = {
+        "diatomic nonmetal": "No metal diatómico",
+        "noble gas": "Gas noble",
+        "alkali metal": "Metal alcalino",
+        "alkaline earth metal": "Metal alcalinotérreo",
+        "metalloid": "Metaloide",
+        "polyatomic nonmetal": "No metal poliatómico",
+        "post-transition metal": "Metal del bloque p",
+        "transition metal": "Metal de transición",
+        "lanthanide": "Lantánido",
+        "actinide": "Actínido"
+    }
+
     colores = {
         "diatomic nonmetal": "#00f0ff", "noble gas": "#ff3366", "alkali metal": "#ff6666",
         "alkaline earth metal": "#ffaa00", "metalloid": "#99ccff", "polyatomic nonmetal": "#00ff00",
@@ -51,45 +62,49 @@ def generar_json():
         elementos_finales = []
         
         for el in data['elements']:
-            # Mapeo de estado natural (Fase)
             estado_en = el.get('phase', 'Solid')
             estado = "Gas" if estado_en == "Gas" else "Líquido" if estado_en == "Liquid" else "Sólido"
             
-            # Asignación de color procedural
-            cat = el.get('category', '').lower()
-            color = "#ffffff"
-            for key, val in colores.items():
-                if key in cat:
-                    color = val
-                    break
-                    
-            # Traducción del nombre
+            cat_en = el.get('category', '').lower()
+            
+            # Limpiar categorías raras como "unknown, probably transition metal"
+            if "transition metal" in cat_en and "post" not in cat_en:
+                cat_en = "transition metal"
+            elif "unknown" in cat_en:
+                cat_en = "post-transition metal" # Fallback visual
+                
+            color = colores.get(cat_en, "#ffffff")
+            familia_es = traducciones_categorias.get(cat_en, "Desconocida")
+            
             nombre_en = el.get('name', '')
-            nombre_es = traducciones.get(nombre_en, nombre_en)
+            nombre_es = traducciones_nombres.get(nombre_en, nombre_en)
             
-            # Descripción genérica en español
-            cat_es = cat.replace("noble gas", "gas noble").replace("transition metal", "metal de transición").replace("alkali metal", "metal alcalino").replace("diatomic nonmetal", "no metal").replace("metalloid", "metaloide").replace("actinide", "actínido").replace("lanthanide", "lantánido")
-            desc = f"El {nombre_es} es un elemento químico de número atómico {el.get('number')}, clasificado como {cat_es}."
+            # Descripción mucho más limpia
+            desc = f"El {nombre_es} es un {familia_es.lower()} en estado {estado.lower()}."
+            if el.get('summary'):
+                # Usamos una descripción corta si no queremos traducir todo el summary largo de wikipedia
+                desc += f" Pertenece al grupo {el.get('group')} y periodo {el.get('period')} de la tabla periódica."
             
-            # Ensamblado del JSON estructurado para la UI
             elemento = {
                 "numero_atomico": el.get('number'),
                 "simbolo": el.get('symbol'),
                 "nombre": nombre_es,
-                "masa_atomica": round(el.get('atomic_mass', 0), 3) if el.get('atomic_mass') else "Desconocida",
+                "masa_atomica": round(el.get('atomic_mass', 0), 3) if el.get('atomic_mass') else "N/A",
                 "estado_natural": estado,
                 "configuracion_electronica": el.get('electron_configuration', 'N/A'),
-                "electronegatividad": el.get('electronegativity_pauling', 0) or 0,
+                "electronegatividad": el.get('electronegativity_pauling', 0) or "N/A",
+                "familia": familia_es,
+                "grupo": el.get('group', 'N/A'),
+                "periodo": el.get('period', 'N/A'),
                 "descripcion": desc,
                 "color_tema": color
             }
             elementos_finales.append(elemento)
 
-        # Sobreescribir el archivo JSON local
         with open('data/elementos.json', 'w', encoding='utf-8') as f:
             json.dump(elementos_finales, f, ensure_ascii=False, indent=2)
             
-        print(f"¡Éxito! Se generaron {len(elementos_finales)} elementos en data/elementos.json")
+        print(f"¡Éxito! Se generaron {len(elementos_finales)} elementos en español puro.")
         
     except Exception as e:
         print(f"Error: {e}")
