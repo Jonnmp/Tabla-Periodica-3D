@@ -342,8 +342,6 @@ function initMediaPipe() {
         onFrame: async () => {
             await hands.send({image: videoElement});
         },
-        width: 640,
-        height: 480
     });
     
     // Capturar el error para que no detenga la ejecución de la app
