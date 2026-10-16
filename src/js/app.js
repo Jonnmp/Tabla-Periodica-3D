@@ -345,7 +345,12 @@ function initMediaPipe() {
         width: 640,
         height: 480
     });
-    cameraUtils.start();
+    
+    // Capturar el error para que no detenga la ejecución de la app
+    cameraUtils.start().catch(error => {
+        console.warn("Cámara no detectada o acceso denegado:", error);
+        alert("No se detectó cámara web. El control por gestos está desactivado, pero puedes usar los botones para navegar.");
+    });
 }
 
 inicializarApp();
