@@ -21,6 +21,10 @@ const uiEstado = document.getElementById('ui-estado');
 const uiConfig = document.getElementById('ui-config');
 const uiElectro = document.getElementById('ui-electro');
 const uiDescripcion = document.getElementById('ui-descripcion');
+const pantallaTabla = document.getElementById('pantalla-tabla');
+const pantallaDetalle = document.getElementById('pantalla-detalle');
+const contenedorGrid = document.getElementById('contenedor-grid');
+const btnVolver = document.getElementById('btn-volver');
 
 // Botones
 const btnPrev = document.getElementById('btn-prev');
@@ -37,7 +41,7 @@ async function inicializarApp() {
         elementos = await respuesta.json();
         
         if(elementos.length > 0) {
-            actualizarUI(elementos[indiceActual]);
+            generarTablaGrid();
         }
     } catch (error) {
         console.error("Error cargando la base de datos:", error);
@@ -355,5 +359,70 @@ function initMediaPipe() {
         alert("No se detectó cámara web. El control por gestos está desactivado.");
     });
 }
+
+function generarTablaGrid() {
+    contenedorGrid.innerHTML = ''; 
+
+    elementos.forEach((elemento, index) => {
+        const celda = document.createElement('div');
+        celda.className = 'celda-elemento';
+        celda.style.setProperty('--color-celda', elemento.color_tema);
+        celda.style.borderColor = elemento.color_tema;
+
+        let col = elemento.grupo;
+        let row = elemento.periodo;
+
+        // Ajuste manual para los que no tienen grupo (Lantánidos y Actínidos flotantes)
+        if (elemento.familia === "Lantánido") {
+            row = 9; 
+            col = elemento.numero_atomico - 57 + 4; // Los empujamos a la derecha
+        } else if (elemento.familia === "Actínido") {
+            row = 10;
+            col = elemento.numero_atomico - 89 + 4;
+        }
+
+        celda.style.gridColumn = col;
+        celda.style.gridRow = row;
+
+        celda.innerHTML = `
+            <div class="celda-numero">${elemento.numero_atomico}</div>
+            <div class="celda-simbolo" style="color: ${elemento.color_tema}">${elemento.simbolo}</div>
+            <div class="celda-nombre">${elemento.nombre}</div>
+        `;
+
+        // Al hacer clic, abrimos la vista 3D
+        celda.addEventListener('click', () => {
+            indiceActual = index;
+            abrirDetalle(elemento);
+        });
+
+        contenedorGrid.appendChild(celda);
+    });
+}
+
+function abrirDetalle(elemento) {
+    pantallaTabla.classList.remove('pantalla-activa');
+    pantallaTabla.classList.add('pantalla-oculta');
+    
+    pantallaDetalle.classList.remove('pantalla-oculta');
+    pantallaDetalle.classList.add('pantalla-activa');
+    
+    actualizarUI(elemento);
+}
+
+btnVolver.addEventListener('click', () => {
+    // Regresar a la tabla principal
+    pantallaDetalle.classList.remove('pantalla-activa');
+    pantallaDetalle.classList.add('pantalla-oculta');
+    
+    pantallaTabla.classList.remove('pantalla-oculta');
+    pantallaTabla.classList.add('pantalla-activa');
+    
+    // Limpiamos el modelo 3D temporalmente para ahorrar memoria
+    while(grupoModelo.children.length > 0){ 
+        grupoModelo.remove(grupoModelo.children[0]); 
+    }
+});
+
 
 inicializarApp();
