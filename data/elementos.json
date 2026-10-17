@@ -1650,19 +1650,5 @@
     "periodo": 7,
     "descripcion": "El Oganesón es un metal del bloque p en estado sólido. Pertenece al grupo 18 y periodo 7 de la tabla periódica.",
     "color_tema": "#cccccc"
-  },
-  {
-    "numero_atomico": 119,
-    "simbolo": "Uue",
-    "nombre": "Ununennium",
-    "masa_atomica": 315,
-    "estado_natural": "Sólido",
-    "configuracion_electronica": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f14 6d10 7p6 8s1",
-    "electronegatividad": "N/A",
-    "familia": "Metal del bloque p",
-    "grupo": 1,
-    "periodo": 8,
-    "descripcion": "El Ununennium es un metal del bloque p en estado sólido. Pertenece al grupo 1 y periodo 8 de la tabla periódica.",
-    "color_tema": "#cccccc"
   }
 ]
