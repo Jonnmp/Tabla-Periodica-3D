@@ -14,7 +14,7 @@
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    display: flex;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -146,7 +146,7 @@ button:hover {
     display: block;
 }
 
-.pantalla-ocultada {
+.pantalla-oculta {
     display: none !important;
 }
 
@@ -223,4 +223,21 @@ button:hover {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* Control estricto de Vistas */
+#pantalla-tabla.pantalla-oculta,
+#pantalla-detalle.pantalla-oculta {
+    display: none !important;
+}
+
+#pantalla-tabla.pantalla-activa {
+    display: block !important;
+}
+
+/* Si tu vista de detalle original usaba flexbox, usa flex. Si no, usa block */
+#pantalla-detalle.pantalla-activa {
+    display: flex !important; 
+    width: 100%;
+    height: 100vh;
 }
