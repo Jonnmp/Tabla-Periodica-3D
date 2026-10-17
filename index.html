@@ -27,63 +27,68 @@
     </div>
 
     <!-- Pantalla Visor 3D -->
-    <div id="canvas-container">
+    <div id="pantalla-detalle" class="pantalla-oculta">
 
-    <div class="camara-preview">
-        <video id="video-camara" autoplay playsinline muted style="display:none;"></video>
-        <canvas id="canvas-mediapipe"></canvas>
-    </div>
-        <!-- Aquí Three.js inyectará el <canvas> -->
-    </div>
-
-    <!-- Panel de Datos -->
-    <aside id="panel-datos">
-        <div class="tarjeta-cristal">
-            <header>
-                <span id="ui-numero-atomico">79</span>
-                <h1 id="ui-simbolo">Au</h1>
-            </header>
-            
-            <section class="detalles">
-                <h2 id="ui-nombre">Oro</h2>
-                
-                <div class="grid-specs">
-                    <div class="spec">
-                        <label>Familia</label>
-                        <span id="ui-familia">Gas noble</span>
-                    </div>
-                    <div class="spec">
-                        <label>Ubicación</label>
-                        <span>Grupo <span id="ui-grupo">18</span>, Per. <span id="ui-periodo">1</span></span>
-                    </div>
-                    <div class="spec">
-                        <label>Masa Atómica</label>
-                        <span id="ui-masa">1.008</span>
-                    </div>
-                    <div class="spec">
-                        <label>Estado</label>
-                        <span id="ui-estado">Gas</span>
-                    </div>
-                    <div class="spec">
-                        <label>Configuración</label>
-                        <span id="ui-config">1s¹</span>
-                    </div>
-                    <div class="spec">
-                        <label>Electronegatividad</label>
-                        <span id="ui-electro">2.2</span>
-                    </div>
-                </div>
-                
-                <p id="ui-descripcion">Metal de transición denso, brillante y extremadamente maleable...</p>
-            </section>
-        </div>
+        <button id="btn-volver" class="btn-regresar">◀ Volver a la Tabla</button>
         
-        <!-- Controles temporales para probar la lógica antes de conectar MediaPipe -->
-        <div class="controles-temporales">
-            <button id="btn-prev">◀ Anterior</button>
-            <button id="btn-next">Siguiente ▶</button>
+        <div id="canvas-container">
+            <div class="camara-preview">
+                <video id="video-camara" autoplay playsinline muted style="display:none;"></video>
+                <canvas id="canvas-mediapipe"></canvas>
+            </div>
+            <!-- Aquí Three.js inyectará el <canvas> -->
         </div>
-    </aside>
+
+        <!-- Panel de Datos -->
+        <aside id="panel-datos">
+            <div class="tarjeta-cristal">
+                <header>
+                    <span id="ui-numero-atomico">79</span>
+                    <h1 id="ui-simbolo">Au</h1>
+                </header>
+                
+                <section class="detalles">
+                    <h2 id="ui-nombre">Oro</h2>
+                    
+                    <div class="grid-specs">
+                        <div class="spec">
+                            <label>Familia</label>
+                            <span id="ui-familia">Gas noble</span>
+                        </div>
+                        <div class="spec">
+                            <label>Ubicación</label>
+                            <span>Grupo <span id="ui-grupo">18</span>, Per. <span id="ui-periodo">1</span></span>
+                        </div>
+                        <div class="spec">
+                            <label>Masa Atómica</label>
+                            <span id="ui-masa">1.008</span>
+                        </div>
+                        <div class="spec">
+                            <label>Estado</label>
+                            <span id="ui-estado">Gas</span>
+                        </div>
+                        <div class="spec">
+                            <label>Configuración</label>
+                            <span id="ui-config">1s¹</span>
+                        </div>
+                        <div class="spec">
+                            <label>Electronegatividad</label>
+                            <span id="ui-electro">2.2</span>
+                        </div>
+                    </div>
+                    
+                    <p id="ui-descripcion">Metal de transición denso, brillante y extremadamente maleable...</p>
+                </section>
+            </div>
+            
+            <!-- Controles temporales para probar la lógica antes de conectar MediaPipe -->
+            <div class="controles-temporales">
+                <button id="btn-prev">◀ Anterior</button>
+                <button id="btn-next">Siguiente ▶</button>
+            </div>
+        </aside>
+
+    </div> <!-- AQUI SE CIERRA CORRECTAMENTE LA PANTALLA DETALLE -->
 
     <script src="src/js/app.js" type="module"></script>
 </body>
