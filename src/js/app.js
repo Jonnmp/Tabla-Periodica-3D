@@ -408,6 +408,10 @@ function abrirDetalle(elemento) {
     pantallaDetalle.classList.add('pantalla-activa');
     
     actualizarUI(elemento);
+
+    setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+    }, 50);
 }
 
 btnVolver.addEventListener('click', () => {
